@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Login Section -->
+      <div id="loginSection">
+        <h2>Simple Login System</h2>
+        <p>Welcome! Please enter your credentials to continue.</p>
+
+        <!-- Part 4: DOM - Display available users -->
+        <div class="user-list">
+          <h4>Available Demo Users:</h4>
+          <div id="userList"></div>
+        </div>
+
+        <input type="text" id="username" placeholder="Enter username" />
+        <input type="password" id="password" placeholder="Enter password" />
+
+        <!-- Part 4: DOM - Error/Success messages -->
+        <div id="message"></div>
+        <div id="attemptsDisplay"></div>
+
+        <button onclick="attemptLogin()">Login</button>
+        <button onclick="clearForm()">Clear</button>
+      </div>
+
+      <!-- Welcome Section (hidden initially) -->
+      <div id="welcomeSection" class="hidden">
+        <h2>Welcome Dashboard</h2>
+        <div id="welcomeMessage"></div>
+        <div id="userInfo"></div>
+        <div id="loginStats"></div>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
